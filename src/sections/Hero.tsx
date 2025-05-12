@@ -33,12 +33,12 @@ export const Hero = () => {
               width={180}
               className="hidden lg:block md:block absolute top-[380px] left-[225px] lg:top-[440px] lg:left-[250px]"
               animate={{
-                translateX: [-180, -5],
+                translateY: [30, -30],
               }}
               transition={{
                 repeat: Infinity,
                 repeatType: "mirror",
-                duration: 8,
+                duration: 5,
                 ease: "easeInOut",
               }}
             />
