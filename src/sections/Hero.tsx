@@ -18,11 +18,11 @@ export const Hero = () => {
               UK Global Immigration Services
             </h1>
             <p className="text-xl text-[#010D3E] tracking-tight mt-6 max-w-[345px]">
-              At UK Global Immigration Services, we provide expert legal
-              guidance to individuals, families, and businesses navigating the
-              UK immigration system. Whether you are applying for a visa,
-              seeking permanent residency, or facing complex immigration
-              challenges, our experienced immigration lawyers are here to help.
+              At UK Global Immigration Service, we provide expert legal guidance
+              to individuals, families, and businesses navigating the UK
+              immigration system. Whether you are applying for a visa, seeking
+              permanent residency, or facing complex immigration challenges, our
+              experienced immigration lawyers are here to help.
             </p>
           </div>
           <div className="mt-20  md:mt-0 md:w-[478px] relative">
