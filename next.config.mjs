@@ -28,6 +28,13 @@ const nextConfig = {
     return config;
   },
 
+  // Image optimization
+  images: {
+    formats: ["image/avif", "image/webp"],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+  },
+
   // Security Headers Configuration
   async headers() {
     return [
@@ -63,10 +70,24 @@ const nextConfig = {
             value:
               "camera=(), microphone=(), geolocation=(), interest-cohort=()",
           },
+          {
+            key: "Content-Security-Policy",
+            value:
+              "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data: https:;",
+          },
         ],
       },
     ];
   },
+
+  // Enable compression
+  compress: true,
+
+  // Trailing slashes configuration
+  trailingSlash: false,
+
+  // Enable React strict mode
+  reactStrictMode: true,
 };
 
 export default nextConfig;
