@@ -26,7 +26,7 @@ export const Hero = () => {
             </p>
           </div>
           <div className="mt-20  md:mt-0 md:w-[478px] relative">
-            <Image src={lawyerImage} alt="Lawyer" />
+            <Image src={lawyerImage} alt="Lawyer" priority />
             <motion.img
               src={plane.src}
               alt="Plane"
